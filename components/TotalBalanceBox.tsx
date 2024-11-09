@@ -2,12 +2,13 @@ import { formatAmount } from '@/lib/utils'
 import React from 'react'
 import CountUp from 'react-countup'
 import AnimatedCounter from './AnimatedCounter'
+import DoughnoutChart from '@/components/DoughnoutChart'
 
 const TotalBlanaceBox = ({ accounts = [], totalBanks, totalCurrentBalance }: TotlaBalanceBoxProps) => {
   return (
     <section className='total-balance'>
         <div className='total-balance-chart'>
-            {/* {DoughnoutChart} */}
+            <DoughnoutChart accounts={[]}/>
         </div>
 
         <div className='flex flex-col gap-6'>
